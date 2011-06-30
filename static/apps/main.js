@@ -1,7 +1,9 @@
 Ext.regApplication({
     name: 'app',
-    defaultUrl: 'welcome/index',
     launch: function() {
-      app.views.viewport = new app.views.Viewport();
+      new Ext.Panel({
+          fullscreen: true,
+          html: 'Sencha Touch has taken over your browser!'
+      });
     }
 });
