@@ -1,8 +1,6 @@
-new Ext.Application({
+Ext.regApplication({
+    name: 'app',
     launch: function() {
-        new Ext.Panel({
-            fullscreen: true,
-            html: '<h1>Hello World!</h1>'
-        });
+      this.views.viewport = new this.views.Viewport();
     }
 });
