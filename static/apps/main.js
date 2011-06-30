@@ -1,6 +1,7 @@
 Ext.regApplication({
     name: 'app',
+    defaultUrl: 'Welcome/index',
     launch: function() {
-      this.views.viewport = new this.views.Viewport();
+      app.views.viewport = new app.views.Viewport();
     }
 });

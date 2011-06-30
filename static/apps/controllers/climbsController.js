@@ -1,0 +1,5 @@
+Ext.regController("climbsList", {
+    
+
+
+});

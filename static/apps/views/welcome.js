@@ -1,3 +1,3 @@
-app.views.Welcome = Ext.extend(Ext.Panel, {
+Ext.reg("WelcomeIndex", Ext.extend(Ext.Panel, {
    html: '<h1>Hello World!</h1>'
-});
+}));
