@@ -6,17 +6,8 @@ Ext.regController("welcome", {
     });    
   },
   
-  index: function(options) {
+  index: function() {
     app.views.viewport.setActiveItem(this.indexView, {type:'fade'});
   },
   
-  startUsing: function(e, target) {
-    Ext.dispatch({
-      controller: 'climbs',
-      action    : 'index',
-      animation: {type:'fade'},
-      historyUrl: 'climbs/index'
-    });
-  }
-
 });
