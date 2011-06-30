@@ -3,26 +3,7 @@ Ext.reg("ClimbsIndex", Ext.extend(Ext.Panel, {
    dockedItems: [
       {
         xtype: 'toolbar',
-        title: 'Climbs',
-        items: [
-          { 
-            xtype: 'spacer' 
-          },
-          {
-            xtype: 'button',
-            text: 'New',
-            listeners: {
-              tap: function() {
-                Ext.dispatch({
-                  controller: 'climbs',
-                  action: 'newClimb',
-                  historyUrl: 'climbs/newClimb',
-                  animation: {type:'slide', direction:'up'}                  
-                });
-              }
-            }
-          }          
-        ]
+        title: 'Climbs',       
       }
    ],
      
