@@ -37,7 +37,8 @@ Ext.regController("climbs", {
       controller: 'climbs',
       action: 'view',
       historyUrl: 'climbs/view/' + climb.id,
-      record: record
+      record: record,
+      animation:options.animation
     });
   }
 

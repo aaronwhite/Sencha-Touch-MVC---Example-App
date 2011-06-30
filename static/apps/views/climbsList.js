@@ -1,5 +1,5 @@
 Ext.reg("ClimbsIndex", Ext.extend(Ext.Panel, {
-
+  layout: 'fit',
    dockedItems: [
       {
         xtype: 'toolbar',
@@ -16,7 +16,8 @@ Ext.reg("ClimbsIndex", Ext.extend(Ext.Panel, {
                 Ext.dispatch({
                   controller: 'climbs',
                   action: 'newClimb',
-                  historyUrl: 'climbs/newClimb'
+                  historyUrl: 'climbs/newClimb',
+                  animation: {type:'slide', direction:'up'}                  
                 });
               }
             }

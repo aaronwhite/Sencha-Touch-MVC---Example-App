@@ -24,5 +24,5 @@ Ext.reg("ClimbsView", Ext.extend(Ext.Panel, {
       }
    ],
   
-   tpl: "Diffuclty: {difficulty}. When: {date}"
+   tpl: '<div class="climb"><p><span>Difficulty:</span> {difficulty}</p><p><span>When:</span> {date}</p></div>'
 }));

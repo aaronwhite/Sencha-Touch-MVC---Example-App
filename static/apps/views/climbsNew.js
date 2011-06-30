@@ -14,7 +14,7 @@ Ext.reg("ClimbsNew", Ext.extend(Ext.form.FormPanel, {
                   controller: 'climbs',
                   action: 'index',
                   historyUrl: 'climbs/index',
-                  animation: {type:'slide', direction:'right'}
+                  animation: {type:'slide', direction:'down'}
                 });
               }
             }
@@ -31,7 +31,7 @@ Ext.reg("ClimbsNew", Ext.extend(Ext.form.FormPanel, {
                           controller: 'climbs',
                           action: 'save',
                           historyUrl: 'climbs/index',                          
-                          animation: {type:'slide', direction:'right'}
+                          animation: {type:'slide', direction:'down'}
                       });
                   }
               }
@@ -42,14 +42,38 @@ Ext.reg("ClimbsNew", Ext.extend(Ext.form.FormPanel, {
    
   items: [
     {
-      name : 'difficulty',
-      label: 'Difficulty',
-      xtype: 'textfield'
+        xtype: 'selectfield',
+        name: 'difficulty',
+        label: 'Difficulty',
+        options: [
+          {
+            text: 'Hard',
+            value: 'hard'
+          }, 
+          {
+            text: 'Easy',
+            value: 'easy'
+          }, 
+          {
+            text: 'Medium',
+            value: 'medium'
+          }, 
+          {
+            text: 'Impossible',
+            value: 'impossible'
+          },
+          , 
+          {
+            text: 'Cake walk',
+            value: 'cake_walk'
+          }  
+        ]
     },
     {
-      name : 'date',
-      label: 'Date',
-      xtype: 'textfield'
+        xtype: 'datepickerfield',
+        name: 'date',
+        label: 'Date',
+        picker: { yearFrom: 2011 }
     }
    ]
 }));

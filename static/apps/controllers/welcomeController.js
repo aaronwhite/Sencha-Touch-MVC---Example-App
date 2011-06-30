@@ -7,14 +7,14 @@ Ext.regController("welcome", {
   },
   
   index: function(options) {
-    app.views.viewport.setActiveItem(this.indexView);
+    app.views.viewport.setActiveItem(this.indexView, {type:'fade'});
   },
   
   startUsing: function(e, target) {
     Ext.dispatch({
       controller: 'climbs',
       action    : 'index',
-      animation: {type:'slide', direction:'left'},
+      animation: {type:'fade'},
       historyUrl: 'climbs/index'
     });
   }
