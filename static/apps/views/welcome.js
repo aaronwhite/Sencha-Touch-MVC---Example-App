@@ -1,5 +1,13 @@
 Ext.reg("WelcomeIndex", Ext.extend(Ext.Panel, {
    layout:'fit',
+   
+   dockedItems: [
+      {
+        xtype: 'toolbar',
+        title: 'Welcome'
+      }
+   ],
+   
    items: [
       {
         xtype: 'button',
@@ -8,8 +16,8 @@ Ext.reg("WelcomeIndex", Ext.extend(Ext.Panel, {
         listeners: {
           tap: function() {
             Ext.dispatch({
-              controller: 'Welcome',
-              action: 'sayHi'
+              controller: 'welcome',
+              action: 'startUsing'
             });
           }
         }

@@ -1,4 +1,4 @@
-Ext.regController("Welcome", {
+Ext.regController("welcome", {
     
   init: function(){
     this.indexView = this.render({
@@ -10,8 +10,13 @@ Ext.regController("Welcome", {
     app.views.viewport.setActiveItem(this.indexView);
   },
   
-  sayHi: function() {
-    alert("hi!");
+  startUsing: function(e, target) {
+    Ext.dispatch({
+      controller: 'climbs',
+      action    : 'index',
+      animation: {type:'slide', direction:'left'},
+      historyUrl: 'climbs/index'
+    });
   }
 
 });
