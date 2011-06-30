@@ -62,7 +62,6 @@ Ext.reg("ClimbsNew", Ext.extend(Ext.form.FormPanel, {
             text: 'Impossible',
             value: 'impossible'
           },
-          , 
           {
             text: 'Cake walk',
             value: 'cake_walk'
