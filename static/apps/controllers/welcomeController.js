@@ -1,15 +1,17 @@
 Ext.regController("Welcome", {
     
   init: function(){
-    this.indexView = this.render(
-      {
-        xtype: 'WelcomeIndex',
-      }
-    );
+    this.indexView = this.render({
+      xtype: 'WelcomeIndex',
+    });    
   },
   
   index: function(options) {
-    app.views.viewport.setActiveItem(this.indexView))
+    app.views.viewport.setActiveItem(this.indexView);
+  },
+  
+  sayHi: function() {
+    alert("hi!");
   }
 
 });

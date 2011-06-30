@@ -1,3 +1,18 @@
 Ext.reg("WelcomeIndex", Ext.extend(Ext.Panel, {
-   html: '<h1>Hello World!</h1>'
+   layout:'fit',
+   items: [
+      {
+        xtype: 'button',
+        text: 'hit me!',
+
+        listeners: {
+          tap: function() {
+            Ext.dispatch({
+              controller: 'Welcome',
+              action: 'sayHi'
+            });
+          }
+        }
+      }
+   ]
 }));
