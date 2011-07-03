@@ -4,7 +4,5 @@ Ext.regModel("Climb", {
         {name: "difficulty", type: "string"},
         {name: "date", type: "string"},
     ],
-   /* proxy: {
-        type: "contactstorage"
-    }*/
+
 });
